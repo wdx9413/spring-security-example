@@ -1,0 +1,29 @@
+spring:
+  datasource:
+    password: mysql-pw
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://39.97.166.150:3306/oauth2?useSSL=false&useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8&allowPublicKeyRetrieval=true
+    username: root
+  devtools:
+    livereload:
+      port: 35792
+      enabled: true
+    restart:
+      enabled: true
+
+server:
+  port: 8080
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+
+mybatis-plus:
+  configuration:
+    cache-enabled: false
+    map-underscore-to-camel-case: true
+  typeAliasesPackage: cn.dox.oauth2.model
+  global-config:
+    field-strategy: 0
+    db-column-underline: true
+    id-type: 0
