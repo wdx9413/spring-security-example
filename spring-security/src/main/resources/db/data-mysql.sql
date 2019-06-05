@@ -1,5 +1,5 @@
-INSERT INTO user (id, username, password) VALUES (1,'user','111111');
-INSERT INTO user (id, username , password) VALUES (2,'admin','111111');
+INSERT INTO user (id, username, password) VALUES (1,'user',' $2a$10$ysMRk8ZTu2aM04GSkiMNXO9qDEndYd99BNcT5GZXurYJ/939EUcHW');
+INSERT INTO user (id, username , password) VALUES (2,'admin',' $2a$10$ysMRk8ZTu2aM04GSkiMNXO9qDEndYd99BNcT5GZXurYJ/939EUcHW');
 INSERT INTO role (id, name) VALUES (1,'USER');
 INSERT INTO role (id, name) VALUES (2,'ADMIN');
 INSERT INTO permission (id, url, name, pid) VALUES (1,'/user/common','common',0);
